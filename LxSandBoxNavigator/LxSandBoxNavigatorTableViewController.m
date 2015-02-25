@@ -82,7 +82,7 @@ static NSString * FileCellIdentifier = @"FileCellIdentifier";
         NSMutableArray * insertIndexPathArray = [NSMutableArray array];
         NSMutableIndexSet * insertIndexSet = [NSMutableIndexSet indexSet];
         
-        for (int i = 0; i < fileModel.contentArray.count; i++) {
+        for (NSInteger i = 0; i < fileModel.contentArray.count; i++) {
             NSIndexPath * insertIndexPath = [NSIndexPath indexPathForRow:indexPath.row + i + 1 inSection:0];
             [insertIndexPathArray addObject:insertIndexPath];
             [insertIndexSet addIndex:indexPath.row + i + 1];
